@@ -95,7 +95,7 @@ describe('Repositories', () => {
     const user = await usersRepository.findUserWithGamesById({
       user_id,
     });
-
+    
     expect(user).toMatchObject({
       first_name: 'Danilo',
       last_name: 'Vieira',
